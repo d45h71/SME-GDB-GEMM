@@ -1,0 +1,1506 @@
+{
+  "schema": 1,
+  "population": {
+    "total": 160,
+    "Primary": 148,
+    "Extension": 12,
+    "shape_sha256": "ede11d9920d7f9e61818694b664490c55dc32a5c60da6d3cfff2a818989032ce"
+  },
+  "experiments": [
+    {
+      "name": "harness",
+      "kind": "harness",
+      "description": "Independent numerical checker and planted-fault rejection",
+      "config": "config/harness.json",
+      "implementation": "tools/harness_checks.py; src/harness/test_backend.cpp",
+      "components": [
+        "matrix"
+      ],
+      "cells": 1,
+      "modes": [
+        "qualification"
+      ],
+      "targets": {
+        "qualification": "qualify-harness"
+      },
+      "outputs": [
+        "summary.json",
+        "protocol-tests",
+        "case outputs"
+      ]
+    },
+    {
+      "name": "fp32-row-stock",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-stock",
+        "calibration": "calibrate-fp32-row-stock"
+      }
+    },
+    {
+      "name": "fp32-row-second",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-second.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "second"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-second",
+        "calibration": "calibrate-fp32-row-second"
+      }
+    },
+    {
+      "name": "fp32-row-first",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-first.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "first"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-first",
+        "calibration": "calibrate-fp32-row-first"
+      }
+    },
+    {
+      "name": "fp32-row-accelerate",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-accelerate.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "accelerate"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-accelerate",
+        "calibration": "calibrate-fp32-row-accelerate"
+      }
+    },
+    {
+      "name": "fp32-row-libxsmm",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-libxsmm.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "libxsmm"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-libxsmm",
+        "calibration": "calibrate-fp32-row-libxsmm"
+      }
+    },
+    {
+      "name": "fp32-row-kleidiai",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-kleidiai.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "kleidiai"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-kleidiai",
+        "calibration": "calibrate-fp32-row-kleidiai"
+      }
+    },
+    {
+      "name": "fp32-row-openblas",
+      "kind": "matrix",
+      "description": "FP32 row-major C=AB",
+      "config": "config/fp32-row-openblas.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "openblas"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-row-openblas",
+        "calibration": "calibrate-fp32-row-openblas"
+      }
+    },
+    {
+      "name": "fp32-column-stock",
+      "kind": "matrix",
+      "description": "FP32 column-major C=C0+AB",
+      "config": "config/fp32-column-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-column-stock",
+        "calibration": "calibrate-fp32-column-stock"
+      }
+    },
+    {
+      "name": "fp32-column-accelerate",
+      "kind": "matrix",
+      "description": "FP32 column-major C=C0+AB",
+      "config": "config/fp32-column-accelerate.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "accelerate"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-column-accelerate",
+        "calibration": "calibrate-fp32-column-accelerate"
+      }
+    },
+    {
+      "name": "fp32-column-libxsmm",
+      "kind": "matrix",
+      "description": "FP32 column-major C=C0+AB",
+      "config": "config/fp32-column-libxsmm.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "libxsmm"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-column-libxsmm",
+        "calibration": "calibrate-fp32-column-libxsmm"
+      }
+    },
+    {
+      "name": "fp32-prepared-row-libxsmm",
+      "kind": "matrix",
+      "description": "Prepared LIBXSMM FP32 row",
+      "config": "config/fp32-prepared-row-libxsmm.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "libxsmm"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-prepared-row-libxsmm",
+        "calibration": "calibrate-fp32-prepared-row-libxsmm"
+      }
+    },
+    {
+      "name": "fp32-prepared-column-libxsmm",
+      "kind": "matrix",
+      "description": "Prepared LIBXSMM FP32 column",
+      "config": "config/fp32-prepared-column-libxsmm.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "libxsmm"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-prepared-column-libxsmm",
+        "calibration": "calibrate-fp32-prepared-column-libxsmm"
+      }
+    },
+    {
+      "name": "fp32-parallel-row-stock",
+      "kind": "matrix",
+      "description": "Parallel FP32 row",
+      "config": "config/fp32-parallel-row-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-parallel-row-stock",
+        "calibration": "calibrate-fp32-parallel-row-stock"
+      }
+    },
+    {
+      "name": "fp32-parallel-row-accelerate",
+      "kind": "matrix",
+      "description": "Parallel FP32 row",
+      "config": "config/fp32-parallel-row-accelerate.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "accelerate"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-parallel-row-accelerate",
+        "calibration": "calibrate-fp32-parallel-row-accelerate"
+      }
+    },
+    {
+      "name": "fp32-parallel-column-stock",
+      "kind": "matrix",
+      "description": "Parallel FP32 column",
+      "config": "config/fp32-parallel-column-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-parallel-column-stock",
+        "calibration": "calibrate-fp32-parallel-column-stock"
+      }
+    },
+    {
+      "name": "fp32-parallel-column-accelerate",
+      "kind": "matrix",
+      "description": "Parallel FP32 column",
+      "config": "config/fp32-parallel-column-accelerate.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "accelerate"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp32-parallel-column-accelerate",
+        "calibration": "calibrate-fp32-parallel-column-accelerate"
+      }
+    },
+    {
+      "name": "fp64-serial-stock",
+      "kind": "matrix",
+      "description": "FP64 to FP64 row-major serial",
+      "config": "config/fp64-serial-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp64-serial-stock",
+        "calibration": "calibrate-fp64-serial-stock"
+      }
+    },
+    {
+      "name": "fp64-serial-accelerate",
+      "kind": "matrix",
+      "description": "FP64 to FP64 row-major serial",
+      "config": "config/fp64-serial-accelerate.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "accelerate"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp64-serial-accelerate",
+        "calibration": "calibrate-fp64-serial-accelerate"
+      }
+    },
+    {
+      "name": "fp64-parallel-stock",
+      "kind": "matrix",
+      "description": "FP64 to FP64 row-major parallel",
+      "config": "config/fp64-parallel-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp64-parallel-stock",
+        "calibration": "calibrate-fp64-parallel-stock"
+      }
+    },
+    {
+      "name": "fp64-parallel-accelerate",
+      "kind": "matrix",
+      "description": "FP64 to FP64 row-major parallel",
+      "config": "config/fp64-parallel-accelerate.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "accelerate"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp64-parallel-accelerate",
+        "calibration": "calibrate-fp64-parallel-accelerate"
+      }
+    },
+    {
+      "name": "fp16-serial-stock",
+      "kind": "matrix",
+      "description": "FP16 to FP32 row-major serial",
+      "config": "config/fp16-serial-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp16-serial-stock",
+        "calibration": "calibrate-fp16-serial-stock"
+      }
+    },
+    {
+      "name": "fp16-parallel-stock",
+      "kind": "matrix",
+      "description": "FP16 to FP32 row-major parallel",
+      "config": "config/fp16-parallel-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-fp16-parallel-stock",
+        "calibration": "calibrate-fp16-parallel-stock"
+      }
+    },
+    {
+      "name": "int8-serial-stock",
+      "kind": "matrix",
+      "description": "signed INT8 to INT32 row-major serial",
+      "config": "config/int8-serial-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-int8-serial-stock",
+        "calibration": "calibrate-int8-serial-stock"
+      }
+    },
+    {
+      "name": "int8-parallel-stock",
+      "kind": "matrix",
+      "description": "signed INT8 to INT32 row-major parallel",
+      "config": "config/int8-parallel-stock.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "stock"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": true,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-int8-parallel-stock",
+        "calibration": "calibrate-int8-parallel-stock"
+      }
+    },
+    {
+      "name": "bf16-serial-kleidiai",
+      "kind": "matrix",
+      "description": "KleidiAI BF16 to FP32 native packed endpoint",
+      "config": "config/bf16-serial-kleidiai.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "matrix",
+        "kleidiai"
+      ],
+      "cells": 160,
+      "qualification_cases": 683,
+      "prerequisites": [
+        "qualification"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-bf16-serial-kleidiai",
+        "calibration": "calibrate-bf16-serial-kleidiai"
+      }
+    },
+    {
+      "name": "ablation",
+      "kind": "matrix",
+      "description": "Five cumulative column-major FP32 configurations",
+      "config": "config/ablation.json",
+      "implementation": "tools/matrix.py; src/ablation",
+      "components": [
+        "matrix",
+        "ablation",
+        "stock",
+        "libxsmm"
+      ],
+      "cells": 800,
+      "qualification_cases": 3415,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-ablation",
+        "calibration": "calibrate-ablation",
+        "measurement": "measure-ablation"
+      }
+    },
+    {
+      "name": "compute-int8",
+      "kind": "compute",
+      "description": "INT8 SME tile/thread compute grid",
+      "config": "config/compute-int8.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 17,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-int8",
+        "calibration": "calibrate-compute-int8",
+        "measurement": "measure-compute-int8"
+      }
+    },
+    {
+      "name": "compute-int16",
+      "kind": "compute",
+      "description": "INT16 SME tile/thread compute grid",
+      "config": "config/compute-int16.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 17,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-int16",
+        "calibration": "calibrate-compute-int16",
+        "measurement": "measure-compute-int16"
+      }
+    },
+    {
+      "name": "compute-int32",
+      "kind": "compute",
+      "description": "INT32 SME tile/thread compute grid",
+      "config": "config/compute-int32.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 17,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": true,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-int32",
+        "calibration": "calibrate-compute-int32",
+        "measurement": "measure-compute-int32"
+      }
+    },
+    {
+      "name": "compute-fp16",
+      "kind": "compute",
+      "description": "FP16 SME tile/thread compute grid",
+      "config": "config/compute-fp16.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 17,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-fp16",
+        "calibration": "calibrate-compute-fp16",
+        "measurement": "measure-compute-fp16"
+      }
+    },
+    {
+      "name": "compute-bf16",
+      "kind": "compute",
+      "description": "BF16 SME tile/thread compute grid",
+      "config": "config/compute-bf16.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 17,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-bf16",
+        "calibration": "calibrate-compute-bf16",
+        "measurement": "measure-compute-bf16"
+      }
+    },
+    {
+      "name": "compute-fp32",
+      "kind": "compute",
+      "description": "FP32 SME tile/thread compute grid",
+      "config": "config/compute-fp32.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 17,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-fp32",
+        "calibration": "calibrate-compute-fp32",
+        "measurement": "measure-compute-fp32"
+      }
+    },
+    {
+      "name": "compute-fp64",
+      "kind": "compute",
+      "description": "FP64 SME tile/thread compute grid",
+      "config": "config/compute-fp64.json",
+      "implementation": "tools/micro.py; src/compute",
+      "components": [
+        "compute"
+      ],
+      "cells": 21,
+      "prerequisites": [
+        "qualification",
+        "calibration"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "rates.json",
+        "peaks.json"
+      ],
+      "unsupported": false,
+      "modes": [
+        "qualification",
+        "calibration",
+        "measurement"
+      ],
+      "targets": {
+        "qualification": "qualify-compute-fp64",
+        "calibration": "calibrate-compute-fp64",
+        "measurement": "measure-compute-fp64"
+      }
+    },
+    {
+      "name": "transfer",
+      "kind": "transfer",
+      "description": "SME transfer",
+      "config": "config/transfer.json",
+      "implementation": "tools/micro.py; src/transfer",
+      "components": [
+        "transfer"
+      ],
+      "cells": 12,
+      "prerequisites": [
+        "qualify-transfer",
+        "calibrate-transfer"
+      ],
+      "outputs": [
+        "native.json",
+        "raw.jsonl",
+        "sessions.json"
+      ],
+      "modes": [
+        "qualification",
+        "calibration"
+      ],
+      "targets": {
+        "qualification": "qualify-transfer",
+        "calibration": "calibrate-transfer"
+      }
+    },
+    {
+      "name": "fp32",
+      "kind": "matrix",
+      "description": "fp32 full matched measurement schedule",
+      "config": "config/fp32.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "first",
+        "kleidiai",
+        "libxsmm",
+        "openblas",
+        "second",
+        "stock",
+        "matrix"
+      ],
+      "cells": 2560,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp32"
+      },
+      "prerequisite_families": [
+        "fp32-row-stock",
+        "fp32-row-second",
+        "fp32-row-first",
+        "fp32-row-accelerate",
+        "fp32-row-libxsmm",
+        "fp32-row-kleidiai",
+        "fp32-row-openblas",
+        "fp32-column-stock",
+        "fp32-column-accelerate",
+        "fp32-column-libxsmm",
+        "fp32-prepared-row-libxsmm",
+        "fp32-prepared-column-libxsmm",
+        "fp32-parallel-row-stock",
+        "fp32-parallel-row-accelerate",
+        "fp32-parallel-column-stock",
+        "fp32-parallel-column-accelerate"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true
+    },
+    {
+      "name": "fp64",
+      "kind": "matrix",
+      "description": "fp64 full matched measurement schedule",
+      "config": "config/fp64.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "stock",
+        "matrix"
+      ],
+      "cells": 640,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp64"
+      },
+      "prerequisite_families": [
+        "fp64-serial-stock",
+        "fp64-serial-accelerate",
+        "fp64-parallel-stock",
+        "fp64-parallel-accelerate"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true
+    },
+    {
+      "name": "mixed",
+      "kind": "matrix",
+      "description": "mixed full matched measurement schedule",
+      "config": "config/mixed.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "kleidiai",
+        "stock",
+        "matrix"
+      ],
+      "cells": 800,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-mixed"
+      },
+      "prerequisite_families": [
+        "fp16-serial-stock",
+        "fp16-parallel-stock",
+        "int8-serial-stock",
+        "int8-parallel-stock",
+        "bf16-serial-kleidiai"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true
+    },
+    {
+      "name": "transfer-all",
+      "kind": "transfer",
+      "description": "456 transfer cells and four interference controls",
+      "config": "config/transfer-all.json",
+      "implementation": "tools/micro.py; src/transfer",
+      "components": [
+        "transfer"
+      ],
+      "cells": 460,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-transfer"
+      },
+      "prerequisite_families": [
+        "transfer"
+      ],
+      "outputs": [
+        "raw.jsonl",
+        "sessions.json",
+        "summary.json"
+      ]
+    },
+    {
+      "name": "fp32-row",
+      "kind": "matrix",
+      "description": "fp32-row complete independent measurement suite",
+      "config": "config/fp32-row.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "first",
+        "kleidiai",
+        "libxsmm",
+        "openblas",
+        "second",
+        "stock",
+        "matrix"
+      ],
+      "cells": 1120,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp32-row"
+      },
+      "prerequisite_families": [
+        "fp32-row-stock",
+        "fp32-row-second",
+        "fp32-row-first",
+        "fp32-row-accelerate",
+        "fp32-row-libxsmm",
+        "fp32-row-kleidiai",
+        "fp32-row-openblas"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": false,
+      "supplemental": true
+    },
+    {
+      "name": "fp32-column",
+      "kind": "matrix",
+      "description": "fp32-column complete independent measurement suite",
+      "config": "config/fp32-column.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "libxsmm",
+        "stock",
+        "matrix"
+      ],
+      "cells": 480,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp32-column"
+      },
+      "prerequisite_families": [
+        "fp32-column-stock",
+        "fp32-column-accelerate",
+        "fp32-column-libxsmm"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": false,
+      "supplemental": true
+    },
+    {
+      "name": "fp32-prepared",
+      "kind": "matrix",
+      "description": "fp32-prepared complete independent measurement suite",
+      "config": "config/fp32-prepared.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "libxsmm",
+        "matrix"
+      ],
+      "cells": 320,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp32-prepared"
+      },
+      "prerequisite_families": [
+        "fp32-prepared-row-libxsmm",
+        "fp32-prepared-column-libxsmm"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": false,
+      "supplemental": true
+    },
+    {
+      "name": "fp32-parallel-row",
+      "kind": "matrix",
+      "description": "fp32-parallel-row complete independent measurement suite",
+      "config": "config/fp32-parallel-row.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "stock",
+        "matrix"
+      ],
+      "cells": 320,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp32-parallel-row"
+      },
+      "prerequisite_families": [
+        "fp32-parallel-row-stock",
+        "fp32-parallel-row-accelerate"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true,
+      "supplemental": true
+    },
+    {
+      "name": "fp32-parallel-column",
+      "kind": "matrix",
+      "description": "fp32-parallel-column complete independent measurement suite",
+      "config": "config/fp32-parallel-column.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "stock",
+        "matrix"
+      ],
+      "cells": 320,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp32-parallel-column"
+      },
+      "prerequisite_families": [
+        "fp32-parallel-column-stock",
+        "fp32-parallel-column-accelerate"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true,
+      "supplemental": true
+    },
+    {
+      "name": "fp64-serial",
+      "kind": "matrix",
+      "description": "fp64-serial complete independent measurement suite",
+      "config": "config/fp64-serial.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "stock",
+        "matrix"
+      ],
+      "cells": 320,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp64-serial"
+      },
+      "prerequisite_families": [
+        "fp64-serial-stock",
+        "fp64-serial-accelerate"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": false,
+      "supplemental": true
+    },
+    {
+      "name": "fp64-parallel",
+      "kind": "matrix",
+      "description": "fp64-parallel complete independent measurement suite",
+      "config": "config/fp64-parallel.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "accelerate",
+        "stock",
+        "matrix"
+      ],
+      "cells": 320,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-fp64-parallel"
+      },
+      "prerequisite_families": [
+        "fp64-parallel-stock",
+        "fp64-parallel-accelerate"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true,
+      "supplemental": true
+    },
+    {
+      "name": "mixed-serial",
+      "kind": "matrix",
+      "description": "mixed-serial complete independent measurement suite",
+      "config": "config/mixed-serial.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "kleidiai",
+        "stock",
+        "matrix"
+      ],
+      "cells": 480,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-mixed-serial"
+      },
+      "prerequisite_families": [
+        "fp16-serial-stock",
+        "int8-serial-stock",
+        "bf16-serial-kleidiai"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": false,
+      "supplemental": true
+    },
+    {
+      "name": "mixed-parallel",
+      "kind": "matrix",
+      "description": "mixed-parallel complete independent measurement suite",
+      "config": "config/mixed-parallel.json",
+      "implementation": "tools/matrix.py; src/harness; src/backends",
+      "components": [
+        "stock",
+        "matrix"
+      ],
+      "cells": 320,
+      "modes": [
+        "measurement"
+      ],
+      "targets": {
+        "measurement": "measure-mixed-parallel"
+      },
+      "prerequisite_families": [
+        "fp16-parallel-stock",
+        "int8-parallel-stock"
+      ],
+      "outputs": [
+        "schedule.json",
+        "case directories with raw/oracle/guard records",
+        "summary.json",
+        "sessions.json",
+        "measurements.json"
+      ],
+      "parallel": true,
+      "supplemental": true
+    }
+  ]
+}

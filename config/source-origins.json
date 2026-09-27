@@ -1,0 +1,27 @@
+[
+  {
+    "path": "src/compute/worker.cpp",
+    "input_sha256": "36c49a11c8463bf206f0c55f31691d1a70960a27c602cba0ce73b9a8a4786f41",
+    "purpose": "SME compute implementation"
+  },
+  {
+    "path": "src/compute/kernels.S",
+    "input_sha256": "0f14acc1272cf8fd7042124ad1b4fcb68274db6c8edb4e6a116254b6a7a14e88",
+    "purpose": "SME compute implementation"
+  },
+  {
+    "path": "src/transfer/qualification.cpp",
+    "input_sha256": "8bef04e08d6f8d72fab6f5b09bd896876c3f23b732aa3d1526e20f1888c9a655",
+    "purpose": "SME transfer implementation"
+  },
+  {
+    "path": "src/transfer/kernels.S",
+    "input_sha256": "bf365dff72784d56587539049b1914cfaf394cd8ad8a50c015d97b18ee073daa",
+    "purpose": "SME transfer implementation"
+  },
+  {
+    "path": "src/transfer/worker.cpp",
+    "input_sha256": "9d7055238f2dbd23c2a57c13acd0edc3b6a9a7ca4704a1111cdb48e44c0267a1",
+    "purpose": "SME transfer implementation"
+  }
+]

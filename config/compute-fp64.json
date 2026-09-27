@@ -1,0 +1,5 @@
+{
+  "name": "compute-fp64",
+  "kind": "compute",
+  "format": "fp64"
+}

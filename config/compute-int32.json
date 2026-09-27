@@ -1,0 +1,5 @@
+{
+  "name": "compute-int32",
+  "kind": "compute",
+  "format": "int32"
+}

@@ -1,0 +1,25 @@
+{
+  "libxsmm": {
+    "revision": "55a8fa6a1e479dec1f5ddbe20684c1cdc0ff7eb1",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/libxsmm/libxsmm",
+    "local_changes": [
+      "Darwin serial JIT pthread declaration",
+      "packed serial descriptor ABI and compile-time bounds",
+      "build-local temporary files"
+    ]
+  },
+  "kleidiai": {
+    "revision": "74b1a12d3620c89dae4766de640e064952000f4d",
+    "license": "Apache-2.0/BSD-3-Clause per source",
+    "url": "https://github.com/ARM-software/kleidiai",
+    "source_selection": "selected SME packers and kernels, recursively required headers"
+  },
+  "openblas": {
+    "revision": "e0166008be8e466242aa76b2ff75ce3f0fbf574a",
+    "version": "0.3.34",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/OpenMathLib/OpenBLAS",
+    "source_selection": "serial VORTEXM4 FP32/FP64 non-LAPACK build"
+  }
+}

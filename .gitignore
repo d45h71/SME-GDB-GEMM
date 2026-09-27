@@ -1,0 +1,7 @@
+/build/
+/results/
+/validation/
+__pycache__/
+*.py[cod]
+.DS_Store
+# If choosing custom build/output directories, add their relative paths here.

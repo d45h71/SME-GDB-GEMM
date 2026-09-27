@@ -1,0 +1,23 @@
+{
+  "name": "harness",
+  "kind": "harness",
+  "description": "Untimed independent-reference and worker rejection checks",
+  "positive_endpoints": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    100
+  ],
+  "faults": [
+    "entry",
+    "tail",
+    "beta",
+    "layout",
+    "nonfinite",
+    "input",
+    "workspace"
+  ],
+  "retain_arrays": true
+}

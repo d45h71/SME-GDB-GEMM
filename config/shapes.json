@@ -1,0 +1,1663 @@
+[
+  {
+    "id": "M1-N256-K1152",
+    "m": 1,
+    "n": 256,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M1-N512-K2048",
+    "m": 1,
+    "n": 512,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M1-N768-K768",
+    "m": 1,
+    "n": 768,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M1-N768-K3072",
+    "m": 1,
+    "n": 768,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M1-N1024-K1152",
+    "m": 1,
+    "n": 1024,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M1-N1024-K2048",
+    "m": 1,
+    "n": 1024,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M1-N1024-K2560",
+    "m": 1,
+    "n": 1024,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M1-N1024-K4096",
+    "m": 1,
+    "n": 1024,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M1-N1152-K1024",
+    "m": 1,
+    "n": 1152,
+    "k": 1024,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M1-N1152-K6912",
+    "m": 1,
+    "n": 1152,
+    "k": 6912,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M1-N2048-K2048",
+    "m": 1,
+    "n": 2048,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "Qwen/Qwen3-1.7B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M1-N2048-K6144",
+    "m": 1,
+    "n": 2048,
+    "k": 6144,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M1-N2048-K8192",
+    "m": 1,
+    "n": 2048,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M1-N2048-K11008",
+    "m": 1,
+    "n": 2048,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M1-N2304-K768",
+    "m": 1,
+    "n": 2304,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M1-N2560-K4096",
+    "m": 1,
+    "n": 2560,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M1-N2560-K9728",
+    "m": 1,
+    "n": 2560,
+    "k": 9728,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M1-N3072-K768",
+    "m": 1,
+    "n": 3072,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M1-N3072-K3072",
+    "m": 1,
+    "n": 3072,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M1-N3072-K8192",
+    "m": 1,
+    "n": 3072,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M1-N4096-K2560",
+    "m": 1,
+    "n": 4096,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M1-N4096-K4096",
+    "m": 1,
+    "n": 4096,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "allenai/OLMo-2-1124-7B-Instruct ",
+      "facebook/opt-6.7b ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M1-N4096-K11008",
+    "m": 1,
+    "n": 4096,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M1-N4096-K12288",
+    "m": 1,
+    "n": 4096,
+    "k": 12288,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M1-N4096-K14336",
+    "m": 1,
+    "n": 4096,
+    "k": 14336,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M1-N4096-K16384",
+    "m": 1,
+    "n": 4096,
+    "k": 16384,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M1-N6144-K2048",
+    "m": 1,
+    "n": 6144,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M1-N6912-K1152",
+    "m": 1,
+    "n": 6912,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M1-N8192-K2048",
+    "m": 1,
+    "n": 8192,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M1-N9216-K3072",
+    "m": 1,
+    "n": 9216,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M1-N9728-K2560",
+    "m": 1,
+    "n": 9728,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M1-N11008-K2048",
+    "m": 1,
+    "n": 11008,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M1-N11008-K4096",
+    "m": 1,
+    "n": 11008,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M1-N12288-K4096",
+    "m": 1,
+    "n": 12288,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M1-N14336-K4096",
+    "m": 1,
+    "n": 14336,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M1-N16384-K3072",
+    "m": 1,
+    "n": 16384,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M1-N16384-K4096",
+    "m": 1,
+    "n": 16384,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M2-N256-K1152",
+    "m": 2,
+    "n": 256,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M2-N512-K2048",
+    "m": 2,
+    "n": 512,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M2-N768-K768",
+    "m": 2,
+    "n": 768,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M2-N768-K3072",
+    "m": 2,
+    "n": 768,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M2-N1024-K1152",
+    "m": 2,
+    "n": 1024,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M2-N1024-K2048",
+    "m": 2,
+    "n": 1024,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M2-N1024-K2560",
+    "m": 2,
+    "n": 1024,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M2-N1024-K4096",
+    "m": 2,
+    "n": 1024,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M2-N1152-K1024",
+    "m": 2,
+    "n": 1152,
+    "k": 1024,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M2-N1152-K6912",
+    "m": 2,
+    "n": 1152,
+    "k": 6912,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M2-N2048-K2048",
+    "m": 2,
+    "n": 2048,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "Qwen/Qwen3-1.7B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M2-N2048-K6144",
+    "m": 2,
+    "n": 2048,
+    "k": 6144,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M2-N2048-K8192",
+    "m": 2,
+    "n": 2048,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M2-N2048-K11008",
+    "m": 2,
+    "n": 2048,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M2-N2304-K768",
+    "m": 2,
+    "n": 2304,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M2-N2560-K4096",
+    "m": 2,
+    "n": 2560,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M2-N2560-K9728",
+    "m": 2,
+    "n": 2560,
+    "k": 9728,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M2-N3072-K768",
+    "m": 2,
+    "n": 3072,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M2-N3072-K3072",
+    "m": 2,
+    "n": 3072,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M2-N3072-K8192",
+    "m": 2,
+    "n": 3072,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M2-N4096-K2560",
+    "m": 2,
+    "n": 4096,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M2-N4096-K4096",
+    "m": 2,
+    "n": 4096,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "allenai/OLMo-2-1124-7B-Instruct ",
+      "facebook/opt-6.7b ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M2-N4096-K11008",
+    "m": 2,
+    "n": 4096,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M2-N4096-K12288",
+    "m": 2,
+    "n": 4096,
+    "k": 12288,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M2-N4096-K14336",
+    "m": 2,
+    "n": 4096,
+    "k": 14336,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M2-N4096-K16384",
+    "m": 2,
+    "n": 4096,
+    "k": 16384,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M2-N6144-K2048",
+    "m": 2,
+    "n": 6144,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M2-N6912-K1152",
+    "m": 2,
+    "n": 6912,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M2-N8192-K2048",
+    "m": 2,
+    "n": 8192,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M2-N9216-K3072",
+    "m": 2,
+    "n": 9216,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M2-N9728-K2560",
+    "m": 2,
+    "n": 9728,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M2-N11008-K2048",
+    "m": 2,
+    "n": 11008,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M2-N11008-K4096",
+    "m": 2,
+    "n": 11008,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M2-N12288-K4096",
+    "m": 2,
+    "n": 12288,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M2-N14336-K4096",
+    "m": 2,
+    "n": 14336,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M2-N16384-K3072",
+    "m": 2,
+    "n": 16384,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M2-N16384-K4096",
+    "m": 2,
+    "n": 16384,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M3-N768-K768",
+    "m": 3,
+    "n": 768,
+    "k": 768,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M3-N768-K3072",
+    "m": 3,
+    "n": 768,
+    "k": 3072,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M3-N2304-K768",
+    "m": 3,
+    "n": 2304,
+    "k": 768,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M3-N3072-K768",
+    "m": 3,
+    "n": 3072,
+    "k": 768,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M4-N256-K1152",
+    "m": 4,
+    "n": 256,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M4-N512-K2048",
+    "m": 4,
+    "n": 512,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M4-N768-K768",
+    "m": 4,
+    "n": 768,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M4-N768-K3072",
+    "m": 4,
+    "n": 768,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M4-N1024-K1152",
+    "m": 4,
+    "n": 1024,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M4-N1024-K2048",
+    "m": 4,
+    "n": 1024,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M4-N1024-K2560",
+    "m": 4,
+    "n": 1024,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M4-N1024-K4096",
+    "m": 4,
+    "n": 1024,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M4-N1152-K1024",
+    "m": 4,
+    "n": 1152,
+    "k": 1024,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M4-N1152-K6912",
+    "m": 4,
+    "n": 1152,
+    "k": 6912,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M4-N2048-K2048",
+    "m": 4,
+    "n": 2048,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "Qwen/Qwen3-1.7B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M4-N2048-K6144",
+    "m": 4,
+    "n": 2048,
+    "k": 6144,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M4-N2048-K8192",
+    "m": 4,
+    "n": 2048,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M4-N2048-K11008",
+    "m": 4,
+    "n": 2048,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M4-N2304-K768",
+    "m": 4,
+    "n": 2304,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M4-N2560-K4096",
+    "m": 4,
+    "n": 2560,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M4-N2560-K9728",
+    "m": 4,
+    "n": 2560,
+    "k": 9728,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M4-N3072-K768",
+    "m": 4,
+    "n": 3072,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M4-N3072-K3072",
+    "m": 4,
+    "n": 3072,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M4-N3072-K8192",
+    "m": 4,
+    "n": 3072,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M4-N4096-K2560",
+    "m": 4,
+    "n": 4096,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M4-N4096-K4096",
+    "m": 4,
+    "n": 4096,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "allenai/OLMo-2-1124-7B-Instruct ",
+      "facebook/opt-6.7b ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M4-N4096-K11008",
+    "m": 4,
+    "n": 4096,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M4-N4096-K12288",
+    "m": 4,
+    "n": 4096,
+    "k": 12288,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M4-N4096-K14336",
+    "m": 4,
+    "n": 4096,
+    "k": 14336,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M4-N4096-K16384",
+    "m": 4,
+    "n": 4096,
+    "k": 16384,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M4-N6144-K2048",
+    "m": 4,
+    "n": 6144,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M4-N6912-K1152",
+    "m": 4,
+    "n": 6912,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M4-N8192-K2048",
+    "m": 4,
+    "n": 8192,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M4-N9216-K3072",
+    "m": 4,
+    "n": 9216,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M4-N9728-K2560",
+    "m": 4,
+    "n": 9728,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M4-N11008-K2048",
+    "m": 4,
+    "n": 11008,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M4-N11008-K4096",
+    "m": 4,
+    "n": 11008,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M4-N12288-K4096",
+    "m": 4,
+    "n": 12288,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M4-N14336-K4096",
+    "m": 4,
+    "n": 14336,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M4-N16384-K3072",
+    "m": 4,
+    "n": 16384,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M4-N16384-K4096",
+    "m": 4,
+    "n": 16384,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M5-N768-K768",
+    "m": 5,
+    "n": 768,
+    "k": 768,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M5-N768-K3072",
+    "m": 5,
+    "n": 768,
+    "k": 3072,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M5-N2304-K768",
+    "m": 5,
+    "n": 2304,
+    "k": 768,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M5-N3072-K768",
+    "m": 5,
+    "n": 3072,
+    "k": 768,
+    "study": "Extension",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M6-N4096-K4096",
+    "m": 6,
+    "n": 4096,
+    "k": 4096,
+    "study": "Extension",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M6-N4096-K16384",
+    "m": 6,
+    "n": 4096,
+    "k": 16384,
+    "study": "Extension",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M6-N12288-K4096",
+    "m": 6,
+    "n": 12288,
+    "k": 4096,
+    "study": "Extension",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M6-N16384-K4096",
+    "m": 6,
+    "n": 16384,
+    "k": 4096,
+    "study": "Extension",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M8-N256-K1152",
+    "m": 8,
+    "n": 256,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M8-N512-K2048",
+    "m": 8,
+    "n": 512,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M8-N768-K768",
+    "m": 8,
+    "n": 768,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M8-N768-K3072",
+    "m": 8,
+    "n": 768,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M8-N1024-K1152",
+    "m": 8,
+    "n": 1024,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M8-N1024-K2048",
+    "m": 8,
+    "n": 1024,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M8-N1024-K2560",
+    "m": 8,
+    "n": 1024,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M8-N1024-K4096",
+    "m": 8,
+    "n": 1024,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M8-N1152-K1024",
+    "m": 8,
+    "n": 1152,
+    "k": 1024,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M8-N1152-K6912",
+    "m": 8,
+    "n": 1152,
+    "k": 6912,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M8-N2048-K2048",
+    "m": 8,
+    "n": 2048,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B ",
+      "Qwen/Qwen3-1.7B ",
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M8-N2048-K6144",
+    "m": 8,
+    "n": 2048,
+    "k": 6144,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M8-N2048-K8192",
+    "m": 8,
+    "n": 2048,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M8-N2048-K11008",
+    "m": 8,
+    "n": 2048,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M8-N2304-K768",
+    "m": 8,
+    "n": 2304,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M8-N2560-K4096",
+    "m": 8,
+    "n": 2560,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M8-N2560-K9728",
+    "m": 8,
+    "n": 2560,
+    "k": 9728,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M8-N3072-K768",
+    "m": 8,
+    "n": 3072,
+    "k": 768,
+    "study": "Primary",
+    "models": [
+      "openai-community/gpt2"
+    ]
+  },
+  {
+    "id": "M8-N3072-K3072",
+    "m": 8,
+    "n": 3072,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M8-N3072-K8192",
+    "m": 8,
+    "n": 3072,
+    "k": 8192,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M8-N4096-K2560",
+    "m": 8,
+    "n": 4096,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M8-N4096-K4096",
+    "m": 8,
+    "n": 4096,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "allenai/OLMo-2-1124-7B-Instruct ",
+      "facebook/opt-6.7b ",
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M8-N4096-K11008",
+    "m": 8,
+    "n": 4096,
+    "k": 11008,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M8-N4096-K12288",
+    "m": 8,
+    "n": 4096,
+    "k": 12288,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B"
+    ]
+  },
+  {
+    "id": "M8-N4096-K14336",
+    "m": 8,
+    "n": 4096,
+    "k": 14336,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M8-N4096-K16384",
+    "m": 8,
+    "n": 4096,
+    "k": 16384,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M8-N6144-K2048",
+    "m": 8,
+    "n": 6144,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-1.7B"
+    ]
+  },
+  {
+    "id": "M8-N6912-K1152",
+    "m": 8,
+    "n": 6912,
+    "k": 1152,
+    "study": "Primary",
+    "models": [
+      "google/gemma-3-1b-it"
+    ]
+  },
+  {
+    "id": "M8-N8192-K2048",
+    "m": 8,
+    "n": 8192,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "ibm-granite/granite-3.1-2b-instruct ",
+      "meta-llama/Llama-3.2-1B"
+    ]
+  },
+  {
+    "id": "M8-N9216-K3072",
+    "m": 8,
+    "n": 9216,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M8-N9728-K2560",
+    "m": 8,
+    "n": 9728,
+    "k": 2560,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-4B"
+    ]
+  },
+  {
+    "id": "M8-N11008-K2048",
+    "m": 8,
+    "n": 11008,
+    "k": 2048,
+    "study": "Primary",
+    "models": [
+      "HuggingFaceTB/SmolLM3-3B"
+    ]
+  },
+  {
+    "id": "M8-N11008-K4096",
+    "m": 8,
+    "n": 11008,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "allenai/OLMo-2-1124-7B-Instruct"
+    ]
+  },
+  {
+    "id": "M8-N12288-K4096",
+    "m": 8,
+    "n": 12288,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "Qwen/Qwen3-8B ",
+      "facebook/opt-6.7b"
+    ]
+  },
+  {
+    "id": "M8-N14336-K4096",
+    "m": 8,
+    "n": 14336,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "meta-llama/Llama-3.1-8B ",
+      "mistralai/Mistral-7B-v0.1"
+    ]
+  },
+  {
+    "id": "M8-N16384-K3072",
+    "m": 8,
+    "n": 16384,
+    "k": 3072,
+    "study": "Primary",
+    "models": [
+      "microsoft/Phi-3-mini-4k-instruct"
+    ]
+  },
+  {
+    "id": "M8-N16384-K4096",
+    "m": 8,
+    "n": 16384,
+    "k": 4096,
+    "study": "Primary",
+    "models": [
+      "facebook/opt-6.7b"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+/* adapter compatibility: intercept every C-to-SME boundary, including Dispatch blocks. */
+#define col_kernel_16x64 mp5_abi_safe_col_kernel_16x64
+#define col_kernel_64x16 mp5_abi_safe_col_kernel_64x16
+#define col_packb mp5_abi_safe_col_packb
+#define row_bkernel_16x64 mp5_abi_safe_row_bkernel_16x64
+#define row_bpacka mp5_abi_safe_row_bpacka
+#define row_bpackb mp5_abi_safe_row_bpackb
+#define row_dkernel_32x8 mp5_abi_safe_row_dkernel_32x8
+#define row_dkernel_8x32 mp5_abi_safe_row_dkernel_8x32
+#define row_dpacka mp5_abi_safe_row_dpacka
+#define row_kernel_16x64 mp5_abi_safe_row_kernel_16x64
+#define row_kernel_64x16 mp5_abi_safe_row_kernel_64x16
+#define row_kernel_nomaterialize_16x64 mp5_abi_safe_row_kernel_nomaterialize_16x64
+#define row_kernel_nomaterialize_64x16 mp5_abi_safe_row_kernel_nomaterialize_64x16
+#define row_packa mp5_abi_safe_row_packa
+#define row_shkernel_16x64 mp5_abi_safe_row_shkernel_16x64
+#define row_shpacka mp5_abi_safe_row_shpacka
+#define row_shpackb mp5_abi_safe_row_shpackb

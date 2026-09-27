@@ -1,0 +1,5 @@
+{
+  "name": "compute-fp16",
+  "kind": "compute",
+  "format": "fp16"
+}

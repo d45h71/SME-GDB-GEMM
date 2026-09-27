@@ -1,0 +1,6 @@
+{
+  "command_timeout_seconds": 3600,
+  "reference_timeout_seconds": 600,
+  "parallel_guard_scope": "nested-required",
+  "notes": "Timeouts bound commands; do not alter numerical or timing methodology."
+}

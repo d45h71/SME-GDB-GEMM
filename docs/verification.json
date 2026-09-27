@@ -1,0 +1,111 @@
+{
+  "artifacts": [
+    {
+      "component": "matrix",
+      "path": "bin/matrix-worker",
+      "sha256": "20b3e6b7043bf6af21d69b4ad02c2bfba7605e8035982f9480b70ae6db0ede4f"
+    },
+    {
+      "component": "matrix",
+      "path": "lib/libmatrix-reference.dylib",
+      "sha256": "0e8f369fb66091983e38b73c5d94816170475612ec012867199c01682801714b"
+    },
+    {
+      "component": "matrix",
+      "path": "lib/libharness-test.dylib",
+      "sha256": "e78e7e19d23324bd474cf6ecbcfa7f6726935ebf868a898893cf069482d35017"
+    },
+    {
+      "component": "stock",
+      "path": "lib/libstock.dylib",
+      "sha256": "af8e65758896f92a3c2553670d28bc4ee25ba532d04d7147d8749cb747a2ff5a"
+    },
+    {
+      "component": "first",
+      "path": "lib/libfirst.dylib",
+      "sha256": "a9d50900f7e1e7a8bb47853da12d8753a080621fbe4c3666a4aaef9cd980fc11"
+    },
+    {
+      "component": "second",
+      "path": "lib/libsecond.dylib",
+      "sha256": "ca5575369b277de798383c960443e729caa8c3c4df290c0c3a96c36f68ac0b92"
+    },
+    {
+      "component": "accelerate",
+      "path": "lib/libaccelerate.dylib",
+      "sha256": "75c14959a17efcd29d0e94c93b0da4b8f9e90ddd5776dc0e485e65bfe7f13dbe"
+    },
+    {
+      "component": "libxsmm",
+      "path": "lib/liblibxsmm.dylib",
+      "sha256": "67d7d6a477cc3e858b49df52e8bfb4de022f3e021db7e96eb0e24fd75c048de2"
+    },
+    {
+      "component": "kleidiai",
+      "path": "lib/libkleidiai.dylib",
+      "sha256": "62500cc8f82f7b164889b2147782facee3d5e4911d8537f14438921d8a41a1c1"
+    },
+    {
+      "component": "openblas",
+      "path": "lib/libopenblas.dylib",
+      "sha256": "5771aec3f2989bb3a979417d5124f6811219a70dddeb70a3eb84f085358eed4a"
+    },
+    {
+      "component": "openblas",
+      "path": "lib/libopenblas-native.dylib",
+      "sha256": "6ec68d7252bd1256b90fab62cba27f509cc0778a209a84842f9cd93e0c4d8459"
+    },
+    {
+      "component": "compute",
+      "path": "bin/compute-worker",
+      "sha256": "a7f61001ca851a7faab72fe58e6006cf0fea7f4d2b7de4faf9b98d2699c73bff"
+    },
+    {
+      "component": "transfer",
+      "path": "bin/transfer-worker",
+      "sha256": "fcd6a83e7bb22a1bdb0a708d3a93d0a74c343cf5e4bb396a795b4b5bbf66c1e7"
+    },
+    {
+      "component": "transfer",
+      "path": "bin/transfer-qualification",
+      "sha256": "440443e7b99783c865a544cd6cb522b9e6bbbdd9ec0df51558cc1783994cdf6d"
+    },
+    {
+      "component": "ablation",
+      "path": "lib/libablation_blocked.dylib",
+      "sha256": "a6e4283e48bf56a7b31daa30be84112358c12eeb5ccb57212c78a7858a2b21af"
+    },
+    {
+      "component": "ablation",
+      "path": "lib/libablation_grouped.dylib",
+      "sha256": "004bc98754fcd0037a37d02a3cc664394914cfc78b32d4dfd47954ebbac098c9"
+    },
+    {
+      "component": "ablation",
+      "path": "lib/libablation_online.dylib",
+      "sha256": "da2cbfad66645eb4217f18f2988bfdadef0740033df66320c22a371caad1391d"
+    }
+  ],
+  "blockers": [
+    "nested backend-worker ABI proof unavailable; default parallel admission blocked",
+    "17 INT32-input SME MOPA cells unsupported by instruction semantics",
+    "first-party license choice required"
+  ],
+  "clock_allowlist_current_host": "MATCH",
+  "command_inventory": {
+    "calibration": 34,
+    "measurement": 21,
+    "offline_analysis": 5,
+    "qualification": 35
+  },
+  "components": 11,
+  "git_initialized": false,
+  "lightweight_checks": 367,
+  "native_calibrations": "NOT_RUN",
+  "native_measurements": "NOT_RUN",
+  "native_qualifications": "NOT_RUN",
+  "relocation_build": "PASS",
+  "source_and_binary_backreferences_to_original": 0,
+  "source_symlinks": 0,
+  "status": "PASS_BUILD_AND_TOOLING_ONLY"
+}
