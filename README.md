@@ -1,6 +1,6 @@
-# Whole-call conditions for eliminating a packed operand in small-row Arm SME GEMM
+# Correctness and Cost Analysis of Exact-Row and Guarded Direct-B GEMM on Arm SME2
 
-A standalone source project for the paper Whole-call conditions for eliminating a packed operand in small-row Arm SME GEMM, compute microbenchmarks, transfer/interference experiments and packing ablations. The
+A standalone source project for the paper Correctness and Cost Analysis of Exact-Row and Guarded Direct-B GEMM on Arm SME2, compute microbenchmarks, transfer/interference experiments and packing ablations. The
 matrix population contains exactly 160 shapes: 148 Primary and 12 Extension.
 
 The project builds before Git initialization and needs no files from its source
